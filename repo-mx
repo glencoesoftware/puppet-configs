@@ -13,5 +13,5 @@ case $branch in
 esac
 confdir=$(puppet --configprint confdir)
 if [ -d "$confdir" ]; then
-  cd $confdir && git reset --quiet --hard HEAD && git pull --quiet origin $branch
+  cd $confdir && git reset --quiet --hard HEAD && git pull --quiet origin $branch && git submodule update --init --recursive
 fi

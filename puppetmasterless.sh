@@ -2,6 +2,7 @@
 #
 # masterless puppet script
 #
+set -e # exit if anything fails
 SITEPP=$( puppet --configprint manifest )
 
 while getopts ":nb:" opt; do
@@ -33,7 +34,7 @@ trap on_exit SIGTERM
 # update super-project and submodules
 cd $( puppet --configprint confdir ) && (
   git pull origin $BRANCH
-  git submodule update --recursive --branch $BRANCH
+  git submodule update --init --recursive
 )
 
 # run puppet

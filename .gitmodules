@@ -1,3 +1,6 @@
 [submodule "modules/truth"]
 	path = modules/truth
 	url = git://github.com/glencoesoftware/puppet-truth.git
+[submodule "modules/puppet"]
+	path = modules/puppet
+	url = git://github.com/glencoesoftware/puppet-puppet.git

@@ -24,7 +24,7 @@ function on_exit() {
   rm -f $(puppet --configprint puppetdlockfile)
 }
 
-trap on_exit EXIT TERM SIGTERM
+trap on_exit SIGTERM
 
 [[ $( which puppet &> /dev/null ) ]] && echo "Missing puppet" && exit 1
 [[ $( which git &> /dev/null ) ]] && echo "Missing git" && exit 1

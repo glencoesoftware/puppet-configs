@@ -1,0 +1,3 @@
+[submodule "modules/truth"]
+	path = modules/truth
+	url = git@github.com:glencoesoftware/puppet-truth.git

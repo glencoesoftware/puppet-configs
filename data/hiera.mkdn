@@ -1,0 +1,12 @@
+Hiera
+=====
+
+Heira is a data storage layer with puppet integration.  It is used to abstract 
+data from manifest configuration.  Things like email addresses, usernames, ntp
+servers can all be stored in various hiera backends in order to keep that 
+information separate from the manifest code.
+
+As currently configured there are 2 hiera backends, yaml and puppet.
+
+More information is available at [http://projects.puppetlabs.com/projects/hiera]
+(http://projects.puppetlabs.com/projects/hiera).

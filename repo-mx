@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# repo maintenance script
+#
+branch=${1:-master}
+case $branch in
+  production)
+    branch=master
+    ;;
+  *)
+    branch=$branch
+    ;;
+esac
+cd $(puppet --configprint confdir) && git reset --hard HEAD && git pull origin $branch

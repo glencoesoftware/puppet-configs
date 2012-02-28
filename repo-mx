@@ -11,4 +11,6 @@ case $branch in
     branch=$branch
     ;;
 esac
+(
 cd $(puppet --configprint confdir) && git reset --hard HEAD && git pull origin $branch
+) 2>&1 | tee /tmp/repo-mx.log

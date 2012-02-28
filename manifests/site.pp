@@ -3,5 +3,5 @@
 # global scope
 # not much should be here --ckm
 node default {
-  include truth::detector
+  include truth::enforcer
 }

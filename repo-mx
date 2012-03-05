@@ -16,7 +16,7 @@ confdir=${confdir:=/etc/puppet}
 if [ -d "$confdir" ]; then
   (
   cd $confdir &&
-    git reset --quiet --hard HEAD &&
+    git checkout --force HEAD &&
     git pull --quiet origin $branch &&
     git submodule update --init --recursive
   if (which logger &> /dev/null); then

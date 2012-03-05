@@ -15,12 +15,17 @@ confdir=$(puppet --configprint confdir)
 confdir=${confdir:=/etc/puppet}
 if [ -d "$confdir" ]; then
   (
+  # confdir is a git repo, cd there checkout to whatever HEAD is configured to
+  # pull and update all submodules
+  # this will destroy local mods to the conf dir on each run which helps reset
+  # from bad configurations
+  # however the configured branch/origin will not change without intervention
   cd $confdir &&
-    git checkout --force HEAD &&
-    git pull --quiet origin $branch &&
+    git checkout --force --quiet $branch &&
+    git pull --quiet &&
     git submodule update --init --recursive
   if (which logger &> /dev/null); then
-    logger -t puppet-repomx -p daemon.info -s -- repository updated at $confdir to $branch
+    logger -t puppet-repomx -p daemon.info -s -- $confdir repository updated to $branch
   fi
   )
 fi

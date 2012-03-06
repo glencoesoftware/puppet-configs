@@ -1,12 +1,12 @@
 ---
-:backends: - yaml
-           - puppet
+:backends:
+  - yaml
+  - puppet
 
-:hierarchy: - %{fqdn}
-            - %{location}
-            - common
+:hierarchy:
+  - %{fqdn}
+  - %{operatingsystem}-%{operatingsystemversion}
+  - common
+
 :yaml:
   :datadir: '/etc/puppet/data'
-
-:puppet:
-  :datasource: data

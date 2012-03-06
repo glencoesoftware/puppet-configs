@@ -1,7 +1,2 @@
 ---
-mycoolthing: soawesome
-dashboard_dbhost: somethingrds
-dashboard_password: speedometer
-dashboard_username: dashboard
-dashboard_db: dashboard
-
+puppetlabs_release_rpm: 'http://yum.puppetlabs.com/el/6/products/x86_64/puppetlabs-release-6-1.noarch.rpm'

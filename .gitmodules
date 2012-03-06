@@ -10,3 +10,6 @@
 [submodule "modules/webserver"]
 	path = modules/webserver
 	url = git://github.com/glencoesoftware/puppet-webserver.git
+[submodule "modules/base"]
+	path = modules/base
+	url = git://github.com/glencoesoftware/puppet-base.git

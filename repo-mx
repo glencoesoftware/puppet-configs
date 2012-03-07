@@ -23,6 +23,7 @@ if [ -d "$confdir" ]; then
   cd $confdir &&
     git checkout --force --quiet $branch &&
     git pull --quiet &&
+    git submodule --quiet sync &&
     git submodule update --init --recursive &&
     ( [[ -d /usr/share/puppet/rack/puppetmasterd/tmp/ ]] && touch /usr/share/puppet/rack/puppetmasterd/tmp/restart.txt )
   if (which logger &> /dev/null); then

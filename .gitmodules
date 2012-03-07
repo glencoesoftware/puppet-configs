@@ -15,4 +15,4 @@
 	url = git://github.com/glencoesoftware/puppet-base.git
 [submodule "modules/mysql"]
 	path = modules/mysql
-	url = git://github.com/puppetlabs/puppetlabs-mysql.git
+	url = git://github.com/glencoesoftware/puppetlabs-mysql.git

@@ -1,0 +1,2 @@
+puppet_master_passenger: true
+puppet_dashboard_passenger: true

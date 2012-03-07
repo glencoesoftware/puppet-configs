@@ -4,8 +4,7 @@
   - puppet
 
 :hierarchy:
-  - %{fqdn}
-  - %{operatingsystem}-%{operatingsystemversion}
+  - %{::fqdn}
   - common
 
 :yaml:

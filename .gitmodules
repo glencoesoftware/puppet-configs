@@ -16,3 +16,6 @@
 [submodule "modules/mysql"]
 	path = modules/mysql
 	url = git://github.com/glencoesoftware/puppetlabs-mysql.git
+[submodule "modules/builder"]
+	path = modules/builder
+	url = git://github.com/glencoesoftware/puppet-builder

@@ -19,6 +19,3 @@
 [submodule "modules/builder"]
 	path = modules/builder
 	url = git://github.com/glencoesoftware/puppet-builder
-[submodule "submodules/omero"]
-	path = submodules/omero
-	url = git://github.com/glencoesoftware/puppet-omero.git

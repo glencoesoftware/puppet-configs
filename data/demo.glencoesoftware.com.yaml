@@ -1,1 +1,2 @@
 omero_installed: true
+pytables_support: true

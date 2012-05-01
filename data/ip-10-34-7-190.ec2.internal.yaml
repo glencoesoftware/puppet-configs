@@ -1,0 +1,3 @@
+pytables_support: true
+omero_db_enable: false
+omero_packages: true

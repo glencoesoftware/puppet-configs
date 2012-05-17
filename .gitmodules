@@ -25,3 +25,6 @@
 [submodule "modules/redmine"]
 	path = modules/redmine
 	url = git://github.com/glencoesoftware/puppet-redmine.git
+[submodule "modules/database"]
+	path = modules/database
+	url = git://github.com/glencoesoftware/puppet-database.git

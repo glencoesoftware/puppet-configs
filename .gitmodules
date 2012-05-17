@@ -24,4 +24,4 @@
 	url = git://github.com/glencoesoftware/puppet-omero.git
 [submodule "modules/redmine"]
 	path = modules/redmine
-	url = git@github.com:glencoesoftware/puppet-redmine.git
+	url = git://github.com/glencoesoftware/puppet-redmine.git

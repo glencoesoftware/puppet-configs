@@ -2,3 +2,4 @@ zeroc_ice_repo_url: 'http://www.zeroc.com/download/Ice/3.4/rhel$releasever/$base
 omero_home_link: /data/omero_home
 omero_data_repo_link: /data/omero_repo
 ice_home: /usr/share/Ice-3.4.2
+pytables_support: true

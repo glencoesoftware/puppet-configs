@@ -28,3 +28,6 @@
 [submodule "modules/database"]
 	path = modules/database
 	url = git://github.com/glencoesoftware/puppet-database.git
+[submodule "modules/monitoring"]
+	path = modules/monitoring
+	url = git://github.com/glencoesoftware/puppet-monitoring.git

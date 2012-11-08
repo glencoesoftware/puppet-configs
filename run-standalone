@@ -1,0 +1,12 @@
+#!/bin/bash
+
+confdir=$(puppet config print confdir 2>/dev/null)
+manifest=$(puppet config print manifest 2>/dev/null)
+
+# update repo
+${confdir}/repo-mx $1
+
+# apply catalog
+if [ -e "${manifest}" ]; then
+  puppet apply --logdest syslog $manifest
+fi

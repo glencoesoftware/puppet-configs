@@ -11,7 +11,7 @@ case $branch in
     branch=$branch
     ;;
 esac
-confdir=$(puppet --configprint confdir)
+confdir=$(puppet config print confdir)
 confdir=${confdir:=/etc/puppet}
 if [ -d "$confdir" ]; then
   (
@@ -24,8 +24,7 @@ if [ -d "$confdir" ]; then
     git checkout --force --quiet $branch &&
     git pull --quiet &&
     git submodule --quiet sync &&
-    git submodule update --init --recursive &&
-    ( [[ -d /usr/share/puppet/rack/puppetmasterd/tmp/ ]] && touch /usr/share/puppet/rack/puppetmasterd/tmp/restart.txt )
+    git submodule update --init --recursive 
   if (which logger &> /dev/null); then
     logger -t puppet-repomx -p daemon.info -s -- $confdir repository updated to $branch
   fi

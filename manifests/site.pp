@@ -3,6 +3,6 @@
 # global scope
 # not much should be here --ckm
 node default {
-  notice "${fqdn} server_roles:${server_tags}"
-  include truth::enforcer
+  $classes = split($server_tags, ',')
+  include $classes
 }

@@ -8,5 +8,9 @@ ${confdir}/repo-mx $1
 
 # apply catalog
 if [ -e "${manifest}" ]; then
-  puppet apply --logdest syslog $manifest
+  if [ -t ]; then
+    puppet apply $manifest
+  else
+    puppet apply --logdest syslog $manifest
+  fi
 fi

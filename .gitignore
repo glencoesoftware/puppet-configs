@@ -1,2 +1,3 @@
 # files ignored from git
 data/*.vagrantup.com.yaml
+classes

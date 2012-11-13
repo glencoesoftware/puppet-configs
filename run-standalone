@@ -2,15 +2,27 @@
 
 confdir=$(puppet config print confdir 2>/dev/null)
 manifest=$(puppet config print manifest 2>/dev/null)
+lockfile=$(puppet config print agent_disabled_lockfile 2>/dev/null)
+
+if [ -e "${lockfile}" ]; then
+  reason=$(< $lockfile)
+  date=$( stat --format '%y' $lockfile )
+  echo "Puppet disabled -- ${reason} @ ${date}"
+  exit 1
+fi
 
 # update repo
 ${confdir}/repo-mx $1
 
 # apply catalog
-if [ -e "${manifest}" ]; then
-  if [ -t ]; then
-    puppet apply $manifest
-  else
-    puppet apply --logdest syslog $manifest
+if [ ! -e "${lockfile}" ]; then
+  if [ -e "${manifest}" ]; then
+    if [ -t ]; then
+      puppet apply $manifest
+    else
+      puppet apply --logdest syslog $manifest
+    fi
   fi
+else
+  echo "found lockfile"
 fi

@@ -1,0 +1,6 @@
+access_groups:
+  - weblitz
+  - omero
+  - rup-video
+  - jcbup
+  - elifeup

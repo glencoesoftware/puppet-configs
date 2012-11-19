@@ -31,3 +31,6 @@
 [submodule "modules/monitoring"]
 	path = modules/monitoring
 	url = git://github.com/glencoesoftware/puppet-monitoring.git
+[submodule "modules/customers"]
+	path = modules/customers
+	url = git@github.com:glencoesoftware/puppet-customers.git

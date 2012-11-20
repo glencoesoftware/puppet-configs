@@ -12,17 +12,17 @@ if [ -e "${lockfile}" ]; then
 fi
 
 # update repo
-if [ -n "$TERM" ]; then
-  ${confdir}/repo-mx $1
-else
-  ${confdir}/repo-mx $1 > /dev/null
-fi
-
+${confdir}/repo-mx $1
 
 # apply catalog
 if [ ! -e "${lockfile}" ]; then
   if [ -e "${manifest}" ]; then
-    puppet apply --logdest syslog $manifest
+    if [ -t 1 ]; then
+      dest="console"
+    else
+      dest="syslog"
+    fi
+    puppet apply --logdest $dest $manifest
   fi
 else
   echo "found lockfile"

@@ -26,7 +26,12 @@ if [ -d "$confdir" ]; then
     git submodule --quiet sync &&
     git submodule update --init --recursive 
   if (which logger &> /dev/null); then
-    logger -t puppet-repomx -p daemon.info -s -- $confdir repository updated to $branch
+    if [ -t 1 ]; then
+      logopts='-s'
+    else
+      logopts=''
+    fi
+    logger -t puppet-repomx -p daemon.info $logopts -- $confdir repository updated to $branch
   fi
   )
 fi

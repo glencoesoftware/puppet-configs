@@ -22,11 +22,7 @@ fi
 # apply catalog
 if [ ! -e "${lockfile}" ]; then
   if [ -e "${manifest}" ]; then
-    if [ -n "$TERM" ]; then
-      puppet apply $manifest
-    else
-      puppet apply --logdest syslog $manifest
-    fi
+    puppet apply --logdest syslog $manifest
   fi
 else
   echo "found lockfile"

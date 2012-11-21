@@ -12,7 +12,7 @@ if [ -e "${lockfile}" ]; then
 fi
 
 # update repo
-${confdir}/repo-mx $1
+${confdir}/repo-mx $BRANCH
 
 # apply catalog
 if [ ! -e "${lockfile}" ]; then
@@ -22,7 +22,7 @@ if [ ! -e "${lockfile}" ]; then
     else
       dest="syslog"
     fi
-    puppet apply --logdest $dest $manifest
+    puppet apply --logdest $dest $manifest "$@"
   fi
 else
   echo "found lockfile"

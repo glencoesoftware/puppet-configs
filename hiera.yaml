@@ -1,7 +1,7 @@
 ---
 :backends:
   - yaml
-  - puppet
+  - json
 
 :hierarchy:
   - %{::fqdn}
@@ -9,3 +9,6 @@
 
 :yaml:
   :datadir: '/etc/puppet/data'
+
+:json:
+  :datadir: /etc/puppet/modules/%{module_name}/data

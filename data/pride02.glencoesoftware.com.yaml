@@ -6,5 +6,10 @@ access_groups:
   - elifeup
 omero_home_link: /data/omero_home
 omero_data_repo_link: /data/omero_repo
-omero_user: weblitz
+omero_owner: weblitz
 omero_group: weblitz
+omero_db_user: weblitz
+omero_db_pass: weblitz
+omero_home: /home/weblitz
+omero_data_repo_owner: weblitz
+omero_data_repo_group: weblitz

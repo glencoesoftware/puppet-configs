@@ -14,3 +14,4 @@ omero_db_pass: weblitz
 omero_home: /home/weblitz
 omero_data_repo_owner: weblitz
 omero_data_repo_group: weblitz
+webtype: nginx

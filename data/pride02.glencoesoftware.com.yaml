@@ -4,6 +4,7 @@ access_groups:
   - rup-video
   - jcbup
   - elifeup
+  - postgres
 omero_home_link: /data/omero_home
 omero_data_repo_link: /data/omero_repo
 omero_owner: weblitz

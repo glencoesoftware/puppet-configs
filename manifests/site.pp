@@ -9,4 +9,5 @@ node default {
       include $classes
     }
   }
+  hiera_include(classes)
 }

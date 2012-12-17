@@ -9,5 +9,5 @@ node default {
       include $classes
     }
   }
-  hiera_include(classes, nil)
+  hiera_include(classes)
 }

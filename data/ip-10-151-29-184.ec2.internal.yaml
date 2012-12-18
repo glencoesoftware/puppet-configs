@@ -1,0 +1,4 @@
+---
+classes:
+  - database::postgres
+  - database::postgres::replication

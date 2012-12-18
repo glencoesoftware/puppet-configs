@@ -12,3 +12,4 @@ postgres_replication_master:
   host: 1.2.3.4
   port: 5432
   user: postgres
+postgres_restore_command: 'cp /data/pg_archive/%f "%p"'

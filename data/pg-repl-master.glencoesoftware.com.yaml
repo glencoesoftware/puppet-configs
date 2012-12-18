@@ -2,3 +2,4 @@
 classes:
   - database::postgres
   - database::postgres::replication
+  - database::postgres::replication::master

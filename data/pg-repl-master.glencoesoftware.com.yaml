@@ -6,6 +6,6 @@ classes:
 postgres_listen_addresses: '*'
 postgres_wal_level: archive
 postgres_wal_keep_segments: 32
-postgres_wal_senders: 5
+postgres_max_wal_senders: 5
 postgres_archive_mode: 'on'
 postgres_archive_command: 'cp %p /data/pg_archive/%f'

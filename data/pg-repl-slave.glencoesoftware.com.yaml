@@ -10,3 +10,5 @@ postgres_replication_master:
   host: 10.211.47.127
   port: 5432
   user: postgres
+sysctl_settings:
+  kernel.shmmax: 104857600

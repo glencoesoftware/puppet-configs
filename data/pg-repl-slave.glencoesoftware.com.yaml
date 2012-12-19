@@ -1,12 +1,12 @@
 ---
 classes:
+  - base::sysctl
   - database::postgres
   - database::postgres::replication
   - database::postgres::replication::slave
 postgres_listen_addresses: '*'
 postgres_hot_standby: 'on'
 postgres_replication_master:
-  host: 10.224.121.81
+  host: 10.211.47.127
   port: 5432
   user: postgres
-postgres_restore_command: 'cp /data/pg_archive/%f "%p"'

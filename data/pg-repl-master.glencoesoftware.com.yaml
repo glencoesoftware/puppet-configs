@@ -8,9 +8,7 @@ postgres_listen_addresses: '*'
 postgres_wal_level: hot_standby
 postgres_wal_keep_segments: 32
 postgres_max_wal_senders: 5
-postgres_archive_mode: 'on'
-postgres_archive_command: 'cp %p /data/pg_archive/%f'
-postgres_replication_slave: 10.152.157.150
+postgres_replication_slave: 10.70.74.147
 sysctl_settings:
   kernel.shmmax: 104857600
 postgres_connections:
@@ -18,5 +16,5 @@ postgres_connections:
     type: host
     database: replication
     user: postgres
-    address: 10.152.157.150/32
+    address: 10.70.74.147/32
     method: trust

@@ -17,3 +17,4 @@ postgres_connections:
     user: postgres
     address: 10.152.157.150/32
     method: trust
+postgres_ssh_pubkey: 'AAAAB3NzaC1yc2EAAAABIwAAAQEA1i/vN/ymey1EPGNQUQtHm9Rr+qzRixaE/i7QTpyA6RC8XSpA9lPTsktoNsD9nBBBLctXFwykfgLpA7q8Bcd9F5PIEizCEYqoG9FkljdhaCq4wyx5omLLXDEGiRLluEhLly8xUScS912h5znvfSRs2kZ7l9aEufsLqNCFjHO1e96+6SqyINnj9EXrRVNpAclgFLp5KgIzY1HGIspWPOCHanNDDQIp8dZsLeL6Uhq6hicqrwr5NRkJC6H6RLH0CF2Pgqb+VhFukEbSxAL5pGxOrQW7eUFiAnnmIWlLzRvfiojJWTCCwACmtNI+n/pSyVKrmTT+Aa3prGhqvcIEKhd2wQ=='

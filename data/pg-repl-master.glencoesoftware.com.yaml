@@ -15,5 +15,5 @@ postgres_connections:
     type: host
     database: replication
     user: postgres
-    address: 10.152.157.150
+    address: 10.152.157.150/32
     method: trust

@@ -4,7 +4,7 @@ classes:
   - database::postgres::replication
   - database::postgres::replication::master
 postgres_listen_addresses: '*'
-postgres_wal_level: archive
+postgres_wal_level: hot_standby
 postgres_wal_keep_segments: 32
 postgres_max_wal_senders: 5
 postgres_archive_mode: 'on'

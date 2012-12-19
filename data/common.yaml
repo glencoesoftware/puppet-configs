@@ -15,3 +15,13 @@ ssh_pubkey_hudson: 'AAAAB3NzaC1yc2EAAAABIwAAAQEAxYqZd9SvD0+LJ4XNGnrByX1CYf6LXA5L
 ssh_pubkey_sebastien: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC3+Oocpxqb78Fen+ZLXjnsYzs4YV/mwHPX3u7QcG7+VXou7jcbK6MNsCjzbCGyjLAys5sEVuB3uaJJNbcwcy6TjWvH/2qClEDzn5k28vCtl+GsXG74o0lsZwVtNBmqhsnpstQpoGifF1P6134KwtVghglWpxEiZJ4sdioJj5om2kozriYMRbpVWpDmM7aj9U5FKHQ8Sagyj/nRUAc3NSa0w9V622br/2IJhEKDok8ttiwtEtPi3EcnNzksESEm/oKexDWub6RAnZ3NRHa530/4MSfKWYk9h5I3VjDtAf3qWyHhGrBMyQRh+p5HqySooCv+RLKZIqLXsDMenGCUWMkb'
 classes:
   - 
+sysctl_settings:
+  net.ipv4.ip_forward: 0
+  net.ipv4.conf.default.rp_filter: 1
+  net.ipv4.conf.default.accept_source_route: 0
+  kernel.sysrq: 0
+  kernel.core_uses_pid: 1
+  net.ipv4.tcp_syncookies: 1
+  net.bridge.bridge-nf-call-ip6tables: 0
+  net.bridge.bridge-nf-call-iptables: 0
+  net.bridge.bridge-nf-call-arptables: 0

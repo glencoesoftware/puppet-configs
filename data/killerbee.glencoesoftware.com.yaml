@@ -1,0 +1,4 @@
+---
+classes:
+  - base::mac::ome_jenkins
+  - base::mac::jenkins

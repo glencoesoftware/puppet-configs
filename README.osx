@@ -1,0 +1,10 @@
+Install instructions from http://docs.puppetlabs.com/guides/installation.html#mac-os-x
+
+* Download dmg's
+  - puppet
+  - hiera
+  - factor
+* hdiutils attach /path/to/dmg
+* sudo installer -pkg /Volumes/volume-0.0.0/volume-0.0.0.pkg -target /
+* puppet resource group puppet ensure=present
+* puppet resource user puppet ensure=present gid=puppet shell='/sbin/nologin'

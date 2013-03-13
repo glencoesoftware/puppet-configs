@@ -1,3 +1,9 @@
+---
+classes:
+  - base::auth
+  - base::check_mk_agent
+  - omero::server
+  - customers::jcb
 access_groups:
   - weblitz
   - omero

@@ -5,3 +5,4 @@ classes:
   - base::auth
   - base::check_mk_agent
   - omero::server
+  - base::auth

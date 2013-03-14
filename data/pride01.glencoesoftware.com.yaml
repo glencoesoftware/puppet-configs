@@ -4,3 +4,9 @@ classes:
   - base::auth
 omero_home_link: /data/omero_home
 omero_data_repo_link: /data/omero_repo
+access_groups:
+  - omero
+  - weblitz
+  - rup-video
+  - jcbup
+  - elifeup

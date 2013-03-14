@@ -3,3 +3,8 @@ classes:
   - base::sshserver
   - base::check_mk_agent
   - base::auth
+access_groups:
+  - weblitz
+  - github-backup
+  - jcb-deploy
+  - omero

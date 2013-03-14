@@ -1,3 +1,4 @@
 ---
 classes:
   - base::sshserver
+  - base::check_mk_agent

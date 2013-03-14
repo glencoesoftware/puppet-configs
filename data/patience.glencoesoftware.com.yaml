@@ -1,6 +1,7 @@
 ---
 classes:
   - base::sshserver
+  - base::check_mk_agent
 zeroc_ice_repo_url: 'http://www.zeroc.com/download/Ice/3.4/rhel$releasever/$basearch'
 omero_home_link: /data/omero_home
 omero_data_repo_link: /data/omero_repo

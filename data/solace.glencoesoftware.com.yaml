@@ -1,6 +1,4 @@
-access_groups:
-  - omero
-webtype: nginx
+---
 classes:
   - base::auth
   - base::check_mk_agent

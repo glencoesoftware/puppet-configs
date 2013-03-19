@@ -8,3 +8,5 @@ omero_home_link: /data/omero_home
 omero_data_repo_link: /data/omero_repo
 ice_home: /usr/share/Ice-3.4.2
 pytables_support: true
+access_groups:
+  - omero

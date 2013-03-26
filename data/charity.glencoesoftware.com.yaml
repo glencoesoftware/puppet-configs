@@ -6,3 +6,4 @@ classes:
   - base::check_mk_agent
   - omero::server
   - base::auth
+zeroc_ice_repo_url: http://www.zeroc.com/download/Ice/3.4/rhel$releasever/$basearch

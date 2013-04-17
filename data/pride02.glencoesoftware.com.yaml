@@ -3,9 +3,10 @@ classes:
   - base::auth
   - base::check_mk_agent
   #- omero::server
-  - customers::jcb
+  #- customers::jcb
   - base::sshserver
   - base::sysctl
+  - database::postgres
   - database::postgres::replication
   - database::postgres::replication::slave
 access_groups:

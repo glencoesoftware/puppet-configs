@@ -30,7 +30,7 @@ webtype: nginx
 postgres_listen_addresses: '*'
 postgres_hot_standby: 'on'
 postgres_replication_master:
-  host: 172.29.15.35
+  host: 107.6.107.235
   port: 5432
   user: postgres
 sysctl_settings:

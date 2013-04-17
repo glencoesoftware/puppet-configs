@@ -5,6 +5,10 @@ classes:
   - omero::server
   - customers::jcb
   - base::sshserver
+  - base::sysctl
+  - database::postgres
+  - database::postgres::replication
+  - database::postgres::replication::slave
 access_groups:
   - weblitz
   - omero
@@ -23,3 +27,11 @@ omero_home: /home/weblitz
 omero_data_repo_owner: weblitz
 omero_data_repo_group: weblitz
 webtype: nginx
+postgres_listen_addresses: '*'
+postgres_hot_standby: 'on'
+postgres_replication_master:
+  host: 172.29.15.35
+  port: 5432
+  user: postgres
+sysctl_settings:
+  kernel.shmmax: 104857600

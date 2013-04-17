@@ -3,8 +3,26 @@ classes:
   - base::sshserver
   - base::check_mk_agent
   - base::auth
+  - base::sysctl
+  - database::postgres
+  - database::postgres::replication
+  - database::postgres::replication::master
 access_groups:
   - weblitz
   - github-backup
   - jcb-deploy
   - omero
+postgres_listen_addresses: '*'
+postgres_wal_level: hot_standby
+postgres_wal_keep_segments: 32
+postgres_max_wal_senders: 5
+postgres_replication_slave: 172.31.33.194
+sysctl_settings:
+  kernel.shmmax: 104857600
+postgres_connections:
+  -
+    type: host
+    database: replication
+    user: postgres
+    address: 172.31.33.194/32
+    method: trust

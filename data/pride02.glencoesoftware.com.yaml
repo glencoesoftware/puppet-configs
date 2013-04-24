@@ -36,3 +36,10 @@ postgres_replication_master:
 sysctl_settings:
   kernel.shmmax: 104857600
 postgres_restore_command: 'cp /data/pg_archive/%f %p'
+postgres_connections:
+  -
+    type: host
+    database: all
+    user: postgres
+    address: 107.6.107.236/32
+    method: trust

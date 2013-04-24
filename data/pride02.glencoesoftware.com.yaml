@@ -35,3 +35,4 @@ postgres_replication_master:
   user: postgres
 sysctl_settings:
   kernel.shmmax: 104857600
+postgres_restore_command: 'cp /data/pg_archive/%f %p'

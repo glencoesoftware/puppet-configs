@@ -6,9 +6,9 @@ classes:
   #- customers::jcb
   - base::sshserver
   - base::sysctl
-  - database::postgres
-  - database::postgres::replication
-  - database::postgres::replication::slave
+  #- database::postgres
+  #- database::postgres::replication
+  #- database::postgres::replication::slave
 access_groups:
   - weblitz
   - omero

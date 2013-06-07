@@ -10,3 +10,4 @@ access_groups:
   - rup-video
   - jcbup
   - elifeup
+  - postgres
